@@ -1,0 +1,171 @@
+/* Boiler-Plate Start */
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    /*  */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* section is the total/ wrapper */
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+/* Boiler-Plate End */
+
+
+/* Navbar Start*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    gap: 40px;
+
+}
+
+header ul li a{
+
+    /* display: inline-block; */
+    color: #333;
+    font-weight: 400;
+    /* margin-left: 40px; */
+}
+
+
+/* Navbar End */
+/* when starting again without looking, try just do navbar by itself then do content by itself etc. */
+
+
+/* Content of Hero-Section Start*/
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .text-block{
+    position: relative;
+    max-width: 600px;
+
+}
+
+.content .text-block h2{
+color: #333;
+font-size: 4em;
+font-weight: 500;
+line-height: 1.4em;
+}
+
+.content .text-block h2 span {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .text-block p{
+    color: #333;
+}
+
+.content .text-block a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+.content .img-box{
+width: 600px;
+display: flex;
+justify-content: end;
+margin-top: 50px;
+padding-right: 50px;
+}
+
+.content .img-box img{
+    max-width: 340px;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    /* dont understand how this translate 50% works */
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.thumb li :hover{
+    transform: translateY(-15px);
+}
+
+.thumb li img{
+    max-width: 60px;
+}
+
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: invert(1);
+}
+
+.sci li a{
+    display: inline-block;
+    margin: 5px 0px;
+    transform: scale(0.6);
+}
+
+.circle{
+    position: absolute;
+    background: #017143;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    clip-path: circle(600px at right 800px);
+}
+
+/* Hero-section End */
